@@ -19,14 +19,13 @@ module.exports = React.StyleSheet.create({
 		alignItems: 'center',
 		justifyContent: 'center',
 		height: HEIGHT_BAR,
-		borderBottomWidth: 3,
-		borderBottomColor: COLOR_BORDER,
+		
 		backgroundColor: 'white'
 	},
 	tabText: {
 	},
 	activeTab: {
-		borderBottomColor: COLOR_MAIN
+		
 	},
 	activeTabText: {
 		color: COLOR_DARK
