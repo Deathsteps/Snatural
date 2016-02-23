@@ -6,7 +6,9 @@ const {
 	COLOR_MAIN,
 	COLOR_DARK,
 	COLOR_BORDER,
-	HEIGHT_BAR
+	HEIGHT_BAR,
+	SCREEN_HEIGHT,
+	SCREEN_WIDTH
 } = require('../constants/StyleConstants');
 
 module.exports = React.StyleSheet.create({
@@ -22,10 +24,9 @@ module.exports = React.StyleSheet.create({
 		
 		backgroundColor: 'white'
 	},
-	tabText: {
-	},
-	activeTab: {
-		
+	tabView: {
+		height: SCREEN_HEIGHT - 2 * HEIGHT_BAR,
+		width: SCREEN_WIDTH
 	},
 	activeTabText: {
 		color: COLOR_DARK

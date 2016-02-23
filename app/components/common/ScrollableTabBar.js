@@ -49,6 +49,7 @@ let Tabbar = React.createClass({
             showsVerticalScrollIndicator={false}
             bounces={false}
             style={styles.viewContainer}
+            contentContainerStyle={styles.container}
             onScroll={this._onScroll}
             scrollEventThrottle={16}
             onMomentumScrollEnd={this._onMomentumScrollEnd}

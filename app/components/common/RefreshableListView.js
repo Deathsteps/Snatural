@@ -9,10 +9,9 @@ const React = require('react-native');
 const {
 	View,
 	Text,
-	ListView
+	ListView,
+	RefreshControl
 } = React;
-
-const styles = require('./RefreshableListView.style');
 
 const Loading = require('./Loading');
 
@@ -36,10 +35,13 @@ const RefreshableListView = React.createClass({
 				renderFooter={this._renderFooter}
 				onEndReached={this._onEndReached}
 				onEndReachedThreshold={20}
+				refreshControl={
+					<RefreshControl onRefresh={this.props.onRefresh}/>
+				}
 				automaticallyAdjustContentInsets={false}
-				initialListSize={3}
-				pageSize={3}
-				style={styles.list}
+				initialListSize={5}
+        pageSize={5}
+				removeClippedSubviews={true}
 				{...this.props}
 			/>
 		);

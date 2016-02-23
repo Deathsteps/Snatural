@@ -21,7 +21,6 @@ const Loading = require('../components/common/Loading');
 const PageMixin = require('./PageMixin');
 const Order = require('../components/Order');
 
-
 const {ORDER_STATUS} = require('../constants/OrderConstants');
 
 let data = [
@@ -85,7 +84,9 @@ const OrderList = React.createClass({
         <RefreshableListView
           dataSource={dataSource}
           renderRow={this._renderRow}
-          onInfinite={(done)=>console.log('hello world!')}
+          onRefresh={() => console.log('onRefresh')}
+          onInfinite={(done) => console.log('hello world!')}
+          style={styles.tabView}
         />
       );
     }else{

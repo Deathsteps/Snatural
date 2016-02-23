@@ -14,7 +14,7 @@ module.exports = React.StyleSheet.create({
   },
   viewContainer: {
     flex: 1,
-    flexDirection: 'row'
+    flexDirection: 'column'
   },
   view: {
     width: SCREEN_WIDTH
