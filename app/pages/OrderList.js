@@ -7,8 +7,8 @@
 const React = require('react-native');
 
 const {
-	View,
-	Text,
+  View,
+  Text,
   ListView
 } = React;
 
@@ -50,30 +50,30 @@ const OrderList = React.createClass({
     let {activeTab} = this.state;
 
     return (
-    	<View style={styles.container}>
-    		<TabBar initalActive="all" tabPosition="top">
-    			{data.map((item) => {
-    				return (
-  	  				<TabBar.Tab 
+      <View style={styles.container}>
+        <TabBar initalActive="all" tabPosition="top">
+          {data.map((item) => {
+            return (
+              <TabBar.Tab 
                 key={item.key} 
                 style={styles.tab}
                 onPress={()=> this.setState({activeTab: item.key})}>
-  	  				  <Text style={[styles.tabText, activeTab === item.key ? styles.activeTabText : null]}>
+                <Text style={[styles.tabText, activeTab === item.key ? styles.activeTabText : null]}>
                   {item.title}
                 </Text>
-  	  				</TabBar.Tab>
-    				);
-    			})}
-    			{data.map((item) => {
-    				return (
-  	  				<TabBar.View key={item.key}>
-  	  				  {this._renderList(item.key)}
-  	  				</TabBar.View>
-    				);
-    			})}
-    		</TabBar>
+              </TabBar.Tab>
+            );
+          })}
+          {data.map((item) => {
+            return (
+              <TabBar.View key={item.key}>
+                {this._renderList(item.key)}
+              </TabBar.View>
+            );
+          })}
+        </TabBar>
         {this._renderNavigatorBar()}
-    	</View>
+      </View>
     );
   },
 

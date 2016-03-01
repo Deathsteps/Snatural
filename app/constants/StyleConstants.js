@@ -1,8 +1,8 @@
 const React = require('react-native');
 
 let {
-	width: screenWidth,
-	height: screenHeight
+  width: screenWidth,
+  height: screenHeight
 } = React.Dimensions.get('window');
 
 exports.SCREEN_WIDTH = screenWidth;
@@ -34,6 +34,6 @@ exports.HEIGHT_BAR = 48;
 let unitWidth = screenWidth / 12;
 let cols = [0];
 for (let i = 1; i < 13; i++){
-	cols.push( i * unitWidth);
+  cols.push( i * unitWidth);
 }
 exports.COLS = cols;

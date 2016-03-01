@@ -5,16 +5,16 @@ const React = require('react-native');
 const {
   TouchableHighlight,
   Text,
-	StyleSheet
+  StyleSheet
 } = React;
 
 const Button = (props) => {
-	let {onPress, text} = props;
-	return (
-		<TouchableHighlight onPress={onPress}>
-			<Text style="styles.button">{text}</Text>
-		</TouchableHighlight>
-	);
+  let {onPress, text} = props;
+  return (
+    <TouchableHighlight onPress={onPress}>
+      <Text style="styles.button">{text}</Text>
+    </TouchableHighlight>
+  );
 }
 
 const styles = StyleSheet.create({

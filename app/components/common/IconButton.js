@@ -7,7 +7,7 @@ const {
   Text,
   TouchableHighlight,
   TouchableWithoutFeedback,
-	StyleSheet
+  StyleSheet
 } = React;
 
 const Icon = require('react-native-vector-icons/MaterialIcons');

@@ -7,8 +7,8 @@
 const React = require('react-native');
 
 const {
-	View,
-	Text
+  View,
+  Text
 } = React;
 
 const Icon = require('react-native-vector-icons/MaterialIcons')

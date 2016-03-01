@@ -8,8 +8,8 @@ const React = require('react-native');
 
 const {
   Image,
-	View,
-	Text,
+  View,
+  Text,
   TouchableWithoutFeedback
 } = React;
 
