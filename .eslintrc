@@ -9,6 +9,7 @@
   "plugins": [
     "react"
   ],
+  "extends": "eslint:recommended",
   "rules": {
     "no-undef": 2,
     "comma-dangle": 2,
